@@ -1,0 +1,5 @@
+export { Home } from './home'
+export { Campaigns } from './compaigns'
+export { Reports } from './Reports'
+export { Settings } from './Settings'
+export { Trends } from './trends'
