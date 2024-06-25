@@ -1,3 +1,13 @@
+const tableData = [
+  { name: 'Full name', company: 'Company name', number: '(480) 555-0103', personas: 'Team name', date: 'Nov 24, 2050',view:'View' },
+  { name: 'Full name', company: 'Company name', number: '(239) 555-0108', personas: 'Team name', date: 'Jan 24, 2050',view:'View'  },
+  { name: 'Full name', company: 'Company name', number: '(239) 555-0108', personas: 'Team name', date: 'Jan 24, 2050',view:'View' },
+  { name: 'Campaign Name', company: '', number: '', personas: '', date: '' },
+  { name: 'Full name', company: 'Company name', number: '(480) 555-0103', personas: 'Team name', date: 'Nov 24, 2050',view:'View'  },
+  { name: 'Full name', company: 'Company name', number: '(239) 555-0108', personas: 'Team name', date: 'Jan 24, 2050',view:'View'  },
+  { name: 'Full name', company: 'Company name', number: '(239) 555-0108', personas: 'Team name', date: 'Jan 24, 2050',view:'View'  },
+];
+
 const TableComponent = () => {
   return (
     <div className="overflow-x-auto">
@@ -18,70 +28,16 @@ const TableComponent = () => {
           </tr>
         </thead>
         <tbody>
-          <tr className="bg-gray-200 border border-black">
-            <td className="px-4 py-3 sm:py-4 text-left border-none font-semibold">Campaign Name</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none "></td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none "></td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none "></td>
-            <td className="px-4 py-3 sm:py-4 text-left border-none "></td>
-            <td className="px-4 py-3 sm:py-4 text-left border-none font-semibold">Pause Campaign</td>
-          </tr>
-          <tr className="border border-black">
-            <td className="px-4 py-3 sm:py-4 text-left border-none font-semibold">Full name</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">Company name</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">(480) 555-0103</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">Team name</td>
-            <td className="px-4 py-3 sm:py-4 text-left border-none ">Nov 24, 2050</td>
-            <td className="px-4 py-3 sm:py-4 text-left border-none ">View</td>
-          </tr>
-          <tr className="border border-black">
-            <td className="px-4 py-3 sm:py-4 text-left border-none font-semibold">Full name</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">Company name</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">(239) 555-0108</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">Team name</td>
-            <td className="px-4 py-3 sm:py-4 text-left border-none ">Jan 24, 2050</td>
-            <td className="px-4 py-3 sm:py-4 text-left border-none ">View</td>
-          </tr>
-          <tr className="border border-black">
-            <td className="px-4 py-3 sm:py-4 text-left border-none font-semibold">Full name</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">Company name</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">(239) 555-0108</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">Team name</td>
-            <td className="px-4 py-3 sm:py-4 text-left border-none ">Jan 24, 2050</td>
-            <td className="px-4 py-3 sm:py-4 text-left border-none ">View</td>
-          </tr>
-          <tr className="bg-gray-200 border border-black">
-            <td className="px-4 py-3 sm:py-4 text-left border-none font-semibold">Campaign Name</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none "></td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none "></td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none "></td>
-            <td className="px-4 py-3 sm:py-4 text-left border-none "></td>
-            <td className="px-4 py-3 sm:py-4 text-left border-none "></td>
-          </tr>
-          <tr className="border border-black">
-            <td className="px-4 py-3 sm:py-4 text-left border-none font-semibold">Full name</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">Company name</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">(480) 555-0103</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">Team name</td>
-            <td className="px-4 py-3 sm:py-4 text-left border-none ">Nov 24, 2050</td>
-            <td className="px-4 py-3 sm:py-4 text-left border-none ">View</td>
-          </tr>
-          <tr className="border border-black">
-            <td className="px-4 py-3 sm:py-4 text-left border-none font-semibold">Full name</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">Company name</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">(239) 555-0108</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">Team name</td>
-            <td className="px-4 py-3 sm:py-4 text-left border-none ">Jan 24, 2050</td>
-            <td className="px-4 py-3 sm:py-4 text-left border-none ">View</td>
-          </tr>
-          <tr className="border border-black">
-            <td className="px-4 py-3 sm:py-4 text-left border-none font-semibold">Full name</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">Company name</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">(239) 555-0108</td>
-            <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none ">Team name</td>
-            <td className="px-4 py-3 sm:py-4 text-left border-none ">Jan 24, 2050</td>
-            <td className="px-4 py-3 sm:py-4 text-left border-none ">View</td>
-          </tr>
+          {tableData.map((row, index) => (
+            <tr key={index} className={`border border-black ${index === 3? 'bg-gray-200' : ''}`}>
+              <td className="px-4 py-3 sm:py-4 text-left border-none font-semibold">{row.name}</td>
+              <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none">{row.company}</td>
+              <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none">{row.number}</td>
+              <td className="hidden sm:table-cell px-4 py-3 sm:py-4 text-left border-none">{row.personas}</td>
+              <td className="px-4 py-3 sm:py-4 text-left border-none">{row.date}</td>
+              <td className="px-4 py-3 sm:py-4 text-left border-none font-semibold">{row.date}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
