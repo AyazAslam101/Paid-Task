@@ -7,13 +7,13 @@ import TaskCard from "../components/taskCard";
 export const Home = () => {
   return (
     <div className="w-full">
-      <div className="p-8">
+      <div className="lg:p-8 md:p-6 p-3">
       <div className="w-full">
-        <div className="flex justify-between items-center mb-8">
-        <h1 className="text-2xl font-normal">Qualified Leads</h1>
+        <div className="flex lg:justify-between md:justify-between sm:justify-between justify-start items-center mb-8">
+        <h1 className="text-2xl font-normal mr-28">Qualified Leads</h1>
         <Dropdown/>
         </div>
-        <div className="w-full grid lg:grid-cols-3 grid-cols-2 gap-8">
+        <div className="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
           <LeadsCard>Good to go.</LeadsCard>
           <LeadsCard>
             Looking at othe brands, services, or experiences.
@@ -23,7 +23,7 @@ export const Home = () => {
       </div>
       <div className="w-full">
         <h1 className="text-2xl font-normal my-8">Task and Reports</h1>
-        <div className="w-full grid lg:grid-cols-3 grid-cols-2 gap-8">
+        <div className="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
           <TaskCard title="Scheduled Meetings" rate="72" button="View Calender">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
             quod!

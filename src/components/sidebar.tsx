@@ -8,6 +8,7 @@ import {
   NotepadText,
   Settings,
   TrendingUp,
+  X,
 } from "lucide-react";
 
 const Sidebar = () => {
@@ -24,7 +25,7 @@ const Sidebar = () => {
   return (
     <div className="relative md:flex md:flex-shrink-0 border-r-[1px] border-black pt-8">
       <Button
-        className={`fixed top-4 right-4 z-50 flex items-center justify-center w-10 h-10 bg-gray-200 rounded-md shadow-md ${isOpen ? 'hidden' : 'block md:hidden'}`}
+        className={`fixed top-5 right-1 z-50 flex items-center justify-center w-10 h-10 bg-gray-200 rounded-md shadow-md ${isOpen ? 'hidden' : 'lg:hidden md:hidden block'}`}
         onClick={toggleSidebar}
       >
         <svg
@@ -53,11 +54,18 @@ const Sidebar = () => {
       </Button>
       <aside
         className={`fixed top-0 left-0 w-64 h-full bg-white shadow-md transform transition-transform ${
-          isOpen ? "translate-x-0 py-10" : "-translate-x-full"
+          isOpen ? "translate-x-0 py-14 z-10" : "-translate-x-full"
         } md:relative md:translate-x-0 md:flex-shrink-0`}
       >
         <nav className="flex flex-col h-full overflow-y-auto" style={{ zIndex: 999 }}>
           <div className="px-4 pt-1">
+            {isOpen && (
+              <>
+              <Button className="fixed top-4 right-1" onClick={handleOverlayClick}>
+                <X/>
+              </Button>
+              </>
+            )} 
             <ul>
               <li>
                 <NavLink
@@ -159,7 +167,7 @@ const Sidebar = () => {
       </aside>
       {isOpen && (
         <div
-          className="fixed top-0 right-1 w-[348px] h-full bg-black opacity-50 md:hidden"
+          className="fixed top-0 right-1 h-full bg-black opacity-50 md:hidden z-index-1"
           onClick={handleOverlayClick}
           style={{ zIndex: 999 }}
         ></div>

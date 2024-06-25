@@ -1,7 +1,7 @@
 const TableComponent = () => {
   return (
     <div className="overflow-x-auto">
-      <table className="min-w-full border border-black">
+      <table className="min-w-full max-w-5xl border border-black mx-auto">
         <thead>
           <tr className="border border-black">
             <th className="px-4 py-3 sm:py-4 text-left border-none text-lg sm:text-xl font-medium">Live Campaigns</th>
