@@ -6,7 +6,7 @@ type Props = {
 
 const LeadsCard = ({ children }: Props) => {
   return (
-    <div className="w-[364px] md:max-w-md lg:max-w-lg xl:max-w-xl bg-white overflow-hidden border border-black shadow-md rounded-lg">
+    <div className="md:max-w-md lg:max-w-lg xl:max-w-xl bg-white overflow-hidden border border-black shadow-md rounded-lg">
       <div className="p-4 flex justify-between items-center border-b border-black">
         <h2 className="text-md font-bold">Ready</h2>
         <div className="w-4 h-4 bg-gray-400 rounded-full"></div>

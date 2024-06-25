@@ -9,7 +9,7 @@ type Props = {
 
 const TaskCard = ({ title, rate, children, button }: Props) => {
   return (
-    <div className="w-[364px] md:max-w-md lg:max-w-lg xl:max-w-xl bg-white overflow-hidden border border-black shadow-md rounded-lg my-4">
+    <div className="md:max-w-md lg:max-w-lg xl:max-w-xl bg-white overflow-hidden border border-black shadow-md rounded-lg my-4">
       <div className="p-4 flex items-center">
         <div className="w-16 h-16 bg-gray-200 flex items-center justify-center">
           <div className="w-4 h-4 bg-black rounded-full"></div>
